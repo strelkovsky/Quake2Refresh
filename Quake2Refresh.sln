@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quake2", "quake2\quake2.vcxproj", "{FE1BEA88-DDEC-4A5C-A57D-4AEF98E474D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ref_gl", "ref_gl\ref_gl.vcxproj", "{621CCFC6-E7C0-4836-9FA6-BE471C7137BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "game\game.vcxproj", "{ECE6F8D1-6D0F-4166-B889-9463B2892CD4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ctf", "ctf\ctf.vcxproj", "{AC55CD3A-9E59-4763-82E2-DD9A4C230EF7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE1BEA88-DDEC-4A5C-A57D-4AEF98E474D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE1BEA88-DDEC-4A5C-A57D-4AEF98E474D6}.Debug|Win32.Build.0 = Debug|Win32
+		{FE1BEA88-DDEC-4A5C-A57D-4AEF98E474D6}.Release|Win32.ActiveCfg = Release|Win32
+		{FE1BEA88-DDEC-4A5C-A57D-4AEF98E474D6}.Release|Win32.Build.0 = Release|Win32
+		{621CCFC6-E7C0-4836-9FA6-BE471C7137BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{621CCFC6-E7C0-4836-9FA6-BE471C7137BC}.Debug|Win32.Build.0 = Debug|Win32
+		{621CCFC6-E7C0-4836-9FA6-BE471C7137BC}.Release|Win32.ActiveCfg = Release|Win32
+		{621CCFC6-E7C0-4836-9FA6-BE471C7137BC}.Release|Win32.Build.0 = Release|Win32
+		{ECE6F8D1-6D0F-4166-B889-9463B2892CD4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECE6F8D1-6D0F-4166-B889-9463B2892CD4}.Debug|Win32.Build.0 = Debug|Win32
+		{ECE6F8D1-6D0F-4166-B889-9463B2892CD4}.Release|Win32.ActiveCfg = Release|Win32
+		{ECE6F8D1-6D0F-4166-B889-9463B2892CD4}.Release|Win32.Build.0 = Release|Win32
+		{AC55CD3A-9E59-4763-82E2-DD9A4C230EF7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC55CD3A-9E59-4763-82E2-DD9A4C230EF7}.Debug|Win32.Build.0 = Debug|Win32
+		{AC55CD3A-9E59-4763-82E2-DD9A4C230EF7}.Release|Win32.ActiveCfg = Release|Win32
+		{AC55CD3A-9E59-4763-82E2-DD9A4C230EF7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
