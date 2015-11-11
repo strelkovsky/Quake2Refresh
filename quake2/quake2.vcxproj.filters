@@ -21,9 +21,6 @@
     <ClCompile Include="..\client\snd_mix.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\client\x86.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\client\cl_cin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
