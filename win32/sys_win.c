@@ -177,23 +177,6 @@ char *Sys_ScanForCD (void)
 	return NULL;
 }
 
-/*
-================
-Sys_CopyProtect
-
-================
-*/
-void	Sys_CopyProtect (void)
-{
-#ifndef DEMO
-	char	*cddir;
-
-	cddir = Sys_ScanForCD();
-	if (!cddir[0])
-		Com_Error (ERR_FATAL, "You must have the Quake2 CD in the drive to play.");
-#endif
-}
-
 
 //================================================================
 
@@ -206,26 +189,6 @@ Sys_Init
 void Sys_Init (void)
 {
 	OSVERSIONINFO	vinfo;
-
-#if 0
-	// allocate a named semaphore on the client so the
-	// front end can tell if it is alive
-
-	// mutex will fail if semephore already exists
-    qwclsemaphore = CreateMutex(
-        NULL,         /* Security attributes */
-        0,            /* owner       */
-        "qwcl"); /* Semaphore name      */
-	if (!qwclsemaphore)
-		Sys_Error ("QWCL is already running on this system");
-	CloseHandle (qwclsemaphore);
-
-    qwclsemaphore = CreateSemaphore(
-        NULL,         /* Security attributes */
-        0,            /* Initial count       */
-        1,            /* Maximum count       */
-        "qwcl"); /* Semaphore name      */
-#endif
 
 	timeBeginPeriod( 1 );
 

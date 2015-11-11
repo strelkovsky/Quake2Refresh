@@ -35,38 +35,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define BUILDSTRING "Win32 DEBUG"
 #endif
 
-#ifdef _M_IX86
 #define	CPUSTRING	"x86"
-#elif defined _M_ALPHA
-#define	CPUSTRING	"AXP"
-#endif
-
-#elif defined __linux__
-
-#define BUILDSTRING "Linux"
-
-#ifdef __i386__
-#define CPUSTRING "i386"
-#elif defined __alpha__
-#define CPUSTRING "axp"
-#else
-#define CPUSTRING "Unknown"
-#endif
-
-#elif defined __sun__
-
-#define BUILDSTRING "Solaris"
-
-#ifdef __i386__
-#define CPUSTRING "i386"
-#else
-#define CPUSTRING "sparc"
-#endif
-
-#else	// !WIN32
-
-#define BUILDSTRING "NON-WIN32"
-#define	CPUSTRING	"NON-WIN32"
 
 #endif
 
@@ -801,7 +770,6 @@ void	Sys_SendKeyEvents (void);
 void	Sys_Error (char *error, ...);
 void	Sys_Quit (void);
 char	*Sys_GetClipboardData( void );
-void	Sys_CopyProtect (void);
 
 /*
 ==============================================================
